@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*
+Folha de estilos em cascata
+*/
+
+|* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #000000cc;
+  text-shadow: 1px 1px 1px black;
+}
+.logo {
+  width: 150px;
+  margin: 70px 0;
+}
+
+header p {
+  font-size: 14px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/*Titulos*/
+
+header h1, main h2 {
+  margin-bottom: 70px;
+}
+
+main h2 span {
+  color: #ff4f4f;
+}
+
+.sangue {
+  color: #ff4f4f;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sangue::before {
+  content: "";
+  background-color: #ff4f4f11;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  /*gota*/
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+}
+
+.doador p {
+  margin-bottom: 64px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+/*Estruturas*/
+
+header, main, footer {
+  text-align: center;
+}
+
+section.doadores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header, .form, main {
+  /*espaçamentos com margin*/
+  margin: 0 auto 70px;
+  /*limites dos elementos na pagina*/
+  width: 90%;
+  max-width: 500px;
+}
+
+/*Header*/
+
+header button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #ff4f4f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #ff4f4fee;
+  transition: 0.2s all;
+  padding: 10px 18px;
+}
+
+header button:active {
+  color: #000;
+  transition: 0.2s all;
+  padding: 10px 18px;
+}
+
+section.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  align-items: center;
+  background-color: #ff4f4f;
+  padding: 16px 64px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px rgba(71, 7, 7, 0.651);
+}
+
+.form h2 {
+  text-align: right;
+  color: #ffffffee;
+  font-size: 18px;
+}
+
+form input, form button {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ffffff88;
+
+  font-size: 14px;
+}
+
+form input {
+  color: #eee;
+  background-color: transparent;
+}
+
+form input::placeholder {
+  color: #ffffffaa;
+}
+
+section form button {
+  font-weight: bold;
+}
+
+section form button:hover {
+  color: white;
+  background-color: #ff4f4fee;
+  transition: 0.5s all;
+  padding: 8px 18px;
+}
+
+section form button:active {
+  color: black;
+  transition: 0.2s all;
+  padding: auto 18px;
+}
+
+footer {
+  margin-top: auto;
+  padding: 16px;
+  border: 1px solid #eee;
+}
+
+/*JAVASCRIPT Funcionalidades*/
+
+section.form {
+  transition: all 900ms;
+}
+
+section.form.hide {
+  background-color: #f9f9f9;
+  color: #f9f9f9;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -70;
+}
