@@ -29,7 +29,8 @@ Desenvolver uma aplicação do zero, "_front_" e "_backend_" simples aonde teria
 
   # create database postgress
   docker run -it -p 5432:5432 postgres
-  # open the docker image and create a database called Donate as it contains in './config/configureConnection '
+
+  # open the docker image and create a database called "Donate" with contains in './config/configureConnection. Within the database create 3 fields name, email and "sangue"
 
   # Go into the repository
   $ cd DoeSangue
