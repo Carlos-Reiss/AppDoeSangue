@@ -24,7 +24,7 @@ Desenvolver uma aplicação do zero, "_front_" e "_backend_" simples aonde teria
 ## How to Use
 
 ```bash
-  #Clone this respository
+  #Clone this repository
   $ git clone https://github.com/carlos-reiss/DoeSangue.git
 
   # create database postgress
